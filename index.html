@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mein Dashboard</title>
+  
+  <!-- Android / Chrome Vollbild-Konfiguration -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#121212">
+  
+  <!-- iOS Vollbild-Konfiguration -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Inline Web-App-Manifest für echtes Vollbild (Standalone) -->
+  <link rel="manifest" href='data:application/manifest+json,{"name":"Dashboard","short_name":"Dashboard","start_url":".","display":"standalone","background_color":"#121212","theme_color":"#121212"}' />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #121212;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbxgp4SOOil_-TSzLsOXINYP7CYtG4Z0r0eSykVjQCpl/dev"></iframe>
+</body>
+</html>
