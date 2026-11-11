@@ -1,28 +1,26 @@
 {
-  "name": "Mein Dashboard",
-  "short_name": "Dashboard",
-  "start_url": "./index.html",
-  "scope": "./",
+  "id": "/Finanztool/",
+  "name": "Finanztool",
+  "short_name": "Finanztool",
+  "description": "Mein Finanz-Dashboard",
+  "start_url": "/Finanztool/index.html",
+  "scope": "/Finanztool/",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#121212",
-  "orientation": "portrait-primary",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/1828/1828765.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%23121212'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='bold' font-size='220'%3EFT%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
     },
     {
-      "src": "https://cdn-icons-png.flaticon.com/256/1828/1828765.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "https://cdn-icons-png.flaticon.com/128/1828/1828765.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%23121212'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='bold' font-size='200'%3EFT%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
   ]
 }
