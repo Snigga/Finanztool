@@ -4,17 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Mein Dashboard</title>
-  
-  <!-- Android / Chrome Vollbild-Konfiguration -->
-  <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#121212">
   
-  <!-- iOS Vollbild-Konfiguration -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  
-  <!-- Inline Web-App-Manifest für echtes Vollbild (Standalone) -->
-  <link rel="manifest" href='data:application/manifest+json,{"name":"Dashboard","short_name":"Dashboard","start_url":".","display":"standalone","background_color":"#121212","theme_color":"#121212"}' />
+  <!-- Verknüpfung zur separaten Manifest-Datei -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
 
   <style>
     body, html {
@@ -34,6 +28,15 @@
   </style>
 </head>
 <body>
-  <iframe src="https://script.google.com/macros/s/AKfycbwWzHtVYuDbQw7RZSuHcQzX66GzK0iSgFeitkLIej_Vl7Iva0wYJvMXlocRW6JxT4Ch7A/exec"></iframe>
+  <iframe src="https://script.google.com/macros/s/AKfycbwWzHtVYuDbQw7RZSuHcQzX66GzK0iSgFeitkLIej_Vl7Iva0wYJvMXlocRW6JxT4Ch7A/exec" allow="clipboard-read; clipboard-write; geolocation"></iframe>
+
+  <!-- Service Worker Registrierung (Pflicht für Android Chrome Installation) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js');
+      });
+    }
+  </script>
 </body>
 </html>
